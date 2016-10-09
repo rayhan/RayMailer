@@ -21,7 +21,7 @@ define('CAKE_CORE_INCLUDE_PATH', ROOT . 'vendor' . DS . 'cakephp' . DS . 'cakeph
 define('CORE_PATH', ROOT . 'vendor' . DS . 'cakephp' . DS . 'cakephp' . DS);
 define('CAKE', CORE_PATH . 'src' . DS);
 define('TESTS', ROOT . 'tests');
-define('APP', ROOT . 'tests' . DS . 'TestCase' . DS);
+define('APP', ROOT . 'tests' . DS);
 define('APP_DIR', 'app');
 define('WEBROOT_DIR', 'webroot');
 define('WWW_ROOT', dirname(APP) . DS . 'webroot' . DS);
@@ -38,7 +38,7 @@ mb_internal_encoding('UTF-8');
 Configure::write('debug', true);
 
 Configure::write('App', [
-    'namespace' => 'RayMailer\Test\TestCase',
+    'namespace' => 'RayMailer',
     'encoding' => 'UTF-8',
     'base' => false,
     'baseUrl' => false,
