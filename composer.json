@@ -1,0 +1,31 @@
+{
+  "name": "rayhan/raymailer",
+  "description": "A mailer plugin for CakePHP database driven Layout and Templates.",
+  "type": "cakephp-plugin",
+  "keywords": ["cakephp", "email", "cron", "preview"],
+  "homepage": "https://github.com/rayhan/raymailer",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Md. Rayhan Chowdhury",
+      "role": "Author"
+    }
+  ],
+  "require": {
+    "cakephp/cakephp": "~3.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "*"
+  },
+  "autoload": {
+      "psr-4": {
+          "RayMailer\\": "src"
+      }
+  },
+  "autoload-dev": {
+      "psr-4": {
+          "RayMailer\\Test\\": "tests",
+          "Cake\\Test\\": "./vendor/cakephp/cakephp/tests"
+      }
+  }
+}
