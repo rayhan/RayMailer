@@ -25,7 +25,7 @@ class TemplatesTableTest extends TestCase
      */
     public $fixtures = [
         'plugin.ray_mailer.templates',
-        'plugin.ray_mailer.raymailer_layouts'
+        'plugin.ray_mailer.layouts'
     ];
 
     /**

@@ -38,7 +38,7 @@ mb_internal_encoding('UTF-8');
 Configure::write('debug', true);
 
 Configure::write('App', [
-    'namespace' => 'RayMailer\Test',
+    'namespace' => 'RayMailer\Test\TestCase',
     'encoding' => 'UTF-8',
     'base' => false,
     'baseUrl' => false,
