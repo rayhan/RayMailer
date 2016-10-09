@@ -6,7 +6,6 @@
 
 <nav class="large-3 medium-4 columns form-nav-actions" id="actions-sidebar">
     <div class="actions">
-
         <?= $this->Html->link(__('Back to Templates'), ['action' => 'index'], ['class' => 'btn btn-default', 'role' => 'button']) ?>
                         <?= $this->Form->postLink(
                         __('Delete'),
@@ -14,7 +13,8 @@
                         ['class' => 'btn btn-danger', 'role' => 'button', 'confirm' => __('Are you sure you want to delete # {0}?', $template->id)]
                     )
                 ?>
-            </div>
+        <?= $this->Html->link(__('Preview'), ['action' => 'preview', $template->id], ['class' => 'btn btn-default', 'role' => 'button', 'target' => '_blank']) ?> 
+    </div>
 </nav>
 
 <div class="templates form large-9 medium-8 columns content">

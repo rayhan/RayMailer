@@ -28,6 +28,25 @@ class TemplatesController extends AppController
     }
 
     /**
+     * preView method
+     *
+     * @param string|null $id Template id.
+     * @return \Cake\Network\Response|null
+     * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
+     */
+    public function preview($id = null)
+    {
+        $template = $this->Templates->get($id, [
+            'contain' => ['Layouts']
+        ]);
+
+        $this->viewBuilder()->layout('preview');
+
+        $this->set('template', $template);
+        $this->set('_serialize', ['template']);
+    }
+
+    /**
      * View method
      *
      * @param string|null $id Template id.

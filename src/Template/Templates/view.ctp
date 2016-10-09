@@ -8,6 +8,7 @@
         <?= $this->Html->link(__('Edit Template'), ['action' => 'edit', $template->id], ['class' => 'btn btn-default', 'role' => 'button']) ?> 
         <?= $this->Form->postLink(__('Delete Template'), ['action' => 'delete', $template->id], ['class' => 'btn btn-danger', 'role' => 'button', 'confirm' => __('Are you sure you want to delete # {0}?', $template->id)]) ?> 
         <?= $this->Html->link(__('New Template'), ['action' => 'add'], ['class' => 'btn btn-primary', 'role' => 'button']) ?> 
+        <?= $this->Html->link(__('Preview'), ['action' => 'preview', $template->id], ['class' => 'btn btn-default', 'role' => 'button', 'target' => '_blank']) ?> 
     </div>
 </nav>
 <div class="templates view large-9 medium-8 columns content">

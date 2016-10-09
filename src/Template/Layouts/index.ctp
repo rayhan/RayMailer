@@ -3,6 +3,7 @@
 
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <div class="actions">
+        <?= $this->Html->link(__('Back to Teamplates'), ['controller' => 'Templates', 'action' => 'index'], ['class' => 'btn btn-default', 'role' => 'button']) ?>
         <?= $this->Html->link(__('New Layout'), ['action' => 'add'], ['class' => 'btn btn-primary', 'role' => 'button']) ?>
     </div>
 </nav>
