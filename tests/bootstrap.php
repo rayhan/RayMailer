@@ -75,6 +75,7 @@ if (!getenv('db_dsn')) {
 
 Cake\Datasource\ConnectionManager::config('test', [
     'url' => getenv('db_dsn'),
+    'encoding' => 'utf8',
     'timezone' => 'UTC'
 ]);
 
