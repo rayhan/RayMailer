@@ -106,6 +106,7 @@ class LayoutsTable extends Table
     public function buildRules(RulesChecker $rules)
     {
         $rules->add($rules->isUnique(['slug']));
+        
         return $rules;
     }
 }

@@ -114,6 +114,7 @@ class TemplatesTable extends Table
     {
         $rules->add($rules->existsIn(['raymailer_layout_id'], 'Layouts'));
         $rules->add($rules->isUnique(['slug']));
+        
         return $rules;
     }
 }
