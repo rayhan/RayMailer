@@ -1,10 +1,10 @@
 {
-    "name": "rayhan/RayMailer",
+    "name": "rayhan/ray-mailer",
     "description": "A mailer plugin for CakePHP3 using database driven Layouts and Templates.",
     "type": "cakephp-plugin",
     "keywords": ["cakephp", "email", "cron", "preview"],
     "license": "MIT",
-    "homepage": "https://github.com/rayhan/RayMailer",
+    "homepage": "https://github.com/rayhan/ray-mailer",
     "authors": [
         {
           "name": "Md. Rayhan Chowdhury",
