@@ -56,4 +56,4 @@ script:
   - sh -c "if [ '$CODECOVERAGE' = '1' ]; then bash codecov.sh; fi"
 
 notifications:
-email: true
+email: false
