@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/rayhan/RayMailer.svg?branch=master)](https://travis-ci.org/rayhan/RayMailer)
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.txt)
+
 # RayMailer plugin for CakePHP
 
 ## Installation
