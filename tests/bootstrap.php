@@ -77,7 +77,7 @@ Cake\Datasource\ConnectionManager::config('test', [
     'url' => getenv('db_dsn'),
     'encoding' => 'utf8',
     'timezone' => 'UTC',
-    'quoteIdentifiers' => ture
+    'quoteIdentifiers' => true
 ]);
 
 Plugin::load('RayMailer', ['path' => ROOT, 'autoload' => true]);
