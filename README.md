@@ -13,3 +13,15 @@ The recommended way to install composer packages is:
 composer require rayhan/ray-mailer
 ```
 
+## Configuration
+
+Add following line to your app bootstrap.php file.
+
+```
+Plugin::load('RayMailer', ['routes' => true]);
+```
+
+## Database
+
+Add database schema from the config/Schema/raymailer.sql file.
+
