@@ -6,6 +6,7 @@ use Cake\Core\Configure;
 use Cake\Core\Plugin;
 use Cake\Datasource\ConnectionManager;
 use Cake\I18n\I18n;
+use Cake\Log\Log;
 use Cake\Routing\DispatcherFactory;
 
 require_once 'vendor/autoload.php';
@@ -35,8 +36,9 @@ date_default_timezone_set('UTC');
 mb_internal_encoding('UTF-8');
 
 Configure::write('debug', true);
+
 Configure::write('App', [
-    'namespace' => 'App',
+    'namespace' => 'RayMailer\Test\App',
     'encoding' => 'UTF-8',
     'base' => false,
     'baseUrl' => false,
@@ -66,10 +68,6 @@ Cache::config([
     ]
 ]);
 
-Plugin::load('RayMailer', ['path' => ROOT]);
-DispatcherFactory::add('Routing');
-DispatcherFactory::add('ControllerFactory');
-
 // Ensure default test connection is defined
 if (!getenv('db_dsn')) {
     putenv('db_dsn=sqlite:///:memory:');
@@ -79,3 +77,8 @@ Cake\Datasource\ConnectionManager::config('test', [
     'url' => getenv('db_dsn'),
     'timezone' => 'UTC'
 ]);
+
+Plugin::load('RayMailer', ['path' => ROOT, 'autoload' => true]);
+DispatcherFactory::add('Routing');
+DispatcherFactory::add('ControllerFactory');
+
