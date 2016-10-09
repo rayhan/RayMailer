@@ -4,6 +4,7 @@
     "type": "cakephp-plugin",
     "keywords": ["cakephp", "email", "cron", "preview"],
     "license": "MIT",
+    "homepage": "https://github.com/rayhan/RayMailer",
     "authors": [
         {
           "name": "Md. Rayhan Chowdhury",
