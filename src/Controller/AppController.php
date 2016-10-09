@@ -1,0 +1,10 @@
+<?php
+
+namespace RayMailer\Controller;
+
+use App\Controller\AppController as BaseController;
+
+class AppController extends BaseController
+{
+
+}
