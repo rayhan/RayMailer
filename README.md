@@ -25,3 +25,21 @@ Plugin::load('RayMailer', ['routes' => true]);
 
 Add database schema from the config/Schema/raymailer.sql file.
 
+## Usage
+
+#### Create Layouts and Templates
+  Access templates at
+	   http://path_to_your_cake_installation/ray-mailer/templates
+
+  Create database layout and templates as necessary.
+
+#### Load mailer class
+```
+use RayMailer\Mailer\RayMailer;
+```
+
+#### Send email
+```
+$mailer = new RayMailer();
+$result = $mailer->deliver('welcome-email', ['to' => 'example@example.com', 'param1' => 'Value of param1'], ['debug' => false]);
+```
