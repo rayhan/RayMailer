@@ -24,7 +24,7 @@ class TemplatesController extends AppController
 
         // for testing quick message.
         $mailer = new RayMailer();
-        $result = $mailer->prepare('welcome-email', ['to' => 'example@example.com', 'param1' => 'Value of param1'], ['debug' => $debug]);
+        $result = $mailer->deliver('welcome-email', ['to' => 'example@example.com', 'param1' => 'Value of param1'], ['debug' => $debug]);
 
         echo $result['message']; 
         exit;

@@ -24,9 +24,10 @@ class RayMailer extends Mailer
      * @param string $template slug value for the template
      * @param array $params
      * @param array $options
-     * @return boolean
+     * @return array
+     * @throws \BadMethodCallException
      */
-    public function prepare($slug, $params = array(), $options = array()) {
+    public function deliver($slug, $params = array(), $options = array()) {
     	$this->defaultParams['_year'] = date('Y');
 
     	$template = TableRegistry::get('RayMailer.Templates')->find()->contain(['Layouts'])->where(['Templates.slug' => $slug, 'Templates.status' => 'Active'])->first();
