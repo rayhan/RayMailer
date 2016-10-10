@@ -14,9 +14,11 @@ endif;
 
 // $this->Html->addCrumb(__('Dashboard'), ['controller' => 'users', 'action' => 'dashboard']);                
 
-$this->start('tb_sidebar');
-echo $this->element('tb_sidebar');
-$this->end();
+if ($this->elementExists('tb_sidebar')):
+    $this->start('tb_sidebar');
+    echo $this->element('tb_sidebar');
+    $this->end();
+endif; 
 
 $this->Html->css('BootstrapUI.dashboard', ['block' => true]);
 $this->prepend('tb_body_attrs', ' class="' . implode(' ', [$this->request->controller, $this->request->action]) . '" ');
