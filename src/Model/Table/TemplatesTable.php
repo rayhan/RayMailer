@@ -75,7 +75,7 @@ class TemplatesTable extends Table
             ->notEmpty('body');
 
         $validator
-            ->allowEmpty('default');
+            ->allowEmpty('saved');
 
         $validator
             ->allowEmpty('sender_name');

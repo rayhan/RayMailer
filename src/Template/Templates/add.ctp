@@ -32,7 +32,7 @@
                                     echo $this->Form->input('raymailer_layout_id', ['options' => $layouts, 'empty' => true]);
                                     echo $this->Form->input('subject');
                                     echo $this->Form->input('body');
-                                    echo $this->Form->input('default');
+                                    echo $this->Form->input('saved');
                                     echo $this->Form->input('sender_name');
                                     echo $this->Form->input('sender_email');
                                     echo $this->Form->input('reply_to');

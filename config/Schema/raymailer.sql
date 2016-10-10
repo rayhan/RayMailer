@@ -26,7 +26,7 @@ CREATE TABLE `raymailer_templates` (
   `slug` varchar(255) DEFAULT NULL,
   `subject` varchar(255) DEFAULT NULL,
   `body` text,
-  `default` text,
+  `saved` text,
   `sender_name` varchar(255) DEFAULT NULL,
   `sender_email` varchar(255) DEFAULT NULL,
   `reply_to` varchar(255) DEFAULT NULL,

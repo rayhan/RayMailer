@@ -72,8 +72,8 @@
         <?= $this->Text->autoParagraph(h($template->body)); ?>
     </div>
     <div class="related">
-        <h4><?= __('Default') ?></h4>
-        <?= $this->Text->autoParagraph(h($template->default)); ?>
+        <h4><?= __('Saved') ?></h4>
+        <?= $this->Text->autoParagraph(h($template->saved)); ?>
     </div>
     <div class="related">
         <h4><?= __('Notes') ?></h4>
