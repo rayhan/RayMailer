@@ -1,6 +1,7 @@
 <?php
 namespace RayMailer\Controller;
 
+use RayMailer\Mailer\RayMailer;
 use RayMailer\Controller\AppController;
 
 /**
@@ -10,6 +11,24 @@ use RayMailer\Controller\AppController;
  */
 class TemplatesController extends AppController
 {
+
+
+    /**
+     * Test method
+     * 
+     * @return \Cake\Network\Response|null
+     */
+    public function test() {
+        
+        $debug = isset($this->request->query['debug']) ? !empty($this->request->query['debug']) : true;
+
+        // for testing quick message.
+        $mailer = new RayMailer();
+        $result = $mailer->prepare('welcome-email', ['to' => 'ray@raynux.com'], ['debug' => $debug]);
+
+        echo $result['message']; 
+        exit;
+    }
 
     /**
      * Index method

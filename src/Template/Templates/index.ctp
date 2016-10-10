@@ -4,6 +4,7 @@
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <div class="actions">
         <?= $this->Html->link(__('New Template'), ['action' => 'add'], ['class' => 'btn btn-primary', 'role' => 'button']) ?>
+        <?= $this->Html->link(__('Layouts'), ['controller' => 'Layouts', 'action' => 'index'], ['class' => 'btn btn-default', 'role' => 'button']) ?>
     </div>
 </nav>
 <div class="templates index large-9 medium-8 columns content">
